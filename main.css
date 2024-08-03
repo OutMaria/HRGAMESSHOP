@@ -1,0 +1,247 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    width: 100%;
+}
+.container {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 5px; 
+}
+h1 {
+    font-family: 'Sigmar One', sans-serif;
+    color: white;
+    margin: 0;
+}
+.menu, .redes-sociais {
+    display: flex;
+    align-items: center;
+}
+.menu button, .redes-sociais button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.menu nav {
+    display: flex;
+    gap: 15px;
+}
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Bungee', cursive;
+}
+.redes-sociais button:hover, .menu button:hover {
+    color: #4b6e70;
+}
+.menu button:hover, .menu button:hover {
+    color: #4b6e70;
+}
+.menu button {
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu nav {
+        display: none;
+    }
+
+    .menu button {
+        display: block;
+    }
+}
+.vendas {
+    background-image: url(imagens/img.pinGIFgamer.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    color: #817777;
+    text-align: center; 
+}
+.vendas h2 {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+.categoria h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.categoria p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .categoria {
+        width: calc(50% - 40px);
+    }
+}
+@media (max-width: 480px) {
+    .categoria {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.fraseinicial {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: #ffffff; 
+}
+
+.fraseinicial p {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 0.6;
+    color: #030303;
+    margin-inline: 0;
+}
+
+.btn-venda {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 15px;
+}
+
+.btn-venda i {
+    font-size: 1.2rem;
+}
+
+.btn-venda:hover {
+    background-color: #0056b3;
+}
+
+.btn-venda:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}
+#sobre, #contato {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+#sobre {
+    display: flex;
+    flex-direction: column;
+}
+#sobre h2 {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#sobre h3 {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#sobre p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333; 
+    line-height: 1.5;
+}
+.gif-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.gif-overlay img {
+    width: 240px;
+    height: auto;
+}
+
+.galeria-produtos {
+    padding: 20px;
+    background-image: url(imagens/gifplanofundo.gif);
+    color: #ddd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin: 20px auto; 
+    max-width: 1200px; 
+}
+
+.galeria-produtos h2 {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    overflow: hidden; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+}
+
+.produto p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
+    color: #333; 
+    margin: 10px 0; 
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
